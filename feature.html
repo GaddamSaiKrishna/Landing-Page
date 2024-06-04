@@ -4,23 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <!-- <script>
-        // Get the current page URL
-        var url = window.location.href;
-    
-        // Select all navigation links
-        var links = document.querySelectorAll('.navbar-nav a');
-    
-        // Loop through each link and check if its href matches the current URL
-        links.forEach(function(link) {
-            if (link.href === url) {
-                // Add the 'active' class to the link if it matches the current URL
-                link.classList.add('active');
-            }else{
-                link.classList.remove('active');
-            }
-        });
-    </script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/fonts/kanit/stylesheet.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +15,7 @@
     <div class="main">
              <!-- navbar section-->
             <section class="nav-container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
                     <div class="container">
                         <img src="./images/brand.jpeg" alt="Brand" class="navbar-brand">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +38,8 @@
                             </ul>
                             <span class="navbar-text nav-right">
                                 <button class="button-2">Download</button>
+                                <img src="./images/mode-light-icon-512x512-yuubs6qt.png" alt="" class="mode">
+            
                             </span>
                         </div>
                     </div>
@@ -71,13 +58,15 @@
                                 </p>
                                 <div class="explore">
                                     <button class="button-2">get started   <i class="fa-solid fa-arrow-right-long"></i></button>
-                                    <p> <i class="bi bi-play-circle"></i>  </p> <p><span>Watch Video</span></p>
+                                    <p> <i class="bi bi-play-circle"></i>  </p> 
+                                    <p><span>Watch Video</span></p>
                                 </div>
                                 <img src="./images/Group 35924.png" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="home-right image-container">
+                                <!-- if we want to align them using position  -->
                                 <!-- <img src="./images/Frame 1.png" alt="" class="img-fluid">
                                 <img src="./images/iPhone-13-Pro-Front.png" alt="" class="img-fluid">
                                 <img src="./images/iPhone-13-Pro-Front-1.png" alt="" class="img-fluid">
@@ -122,7 +111,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="feature-right">
+                            <div class="feature-right adv-left">
                                 <span class="title1">ADVANTAGES</span>
                                 <h1>why choose Uifry?</h1>
                                 <div class="budget">
@@ -139,15 +128,15 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="custom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="col-lg-5 col-md-12 col-sm-12 custom-left">
                             <div>
-                                <img src="./images/iPhone-13-Pro-Front 2.png" alt="">
+                                <img src="./images/iPhone-13-Pro-Front 2.png" alt="" class="img-fluid">
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="col-lg-7 col-md-12 col-sm-12 custom-right">
                             <div>
                                 <div class="budget">
                                     <h6><i class="bi bi-star-half"></i> fully customizable</h6>
@@ -239,10 +228,12 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container-fluid">
+            <section class="image">
+                <div class="container">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img src="./images/Frame.png" alt="">
+                        <div class="image-container">
+                            <img src="./images/Frame.png" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
