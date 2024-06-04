@@ -31,6 +31,10 @@ nav{
     font-weight: bold;
     font-size: 30px !important;
 }
+.active{
+    color: #FF5555 !important;
+    cursor: pointer;
+}
 /*navbar right, download button  */
 .nav-right{
     display: flex;
