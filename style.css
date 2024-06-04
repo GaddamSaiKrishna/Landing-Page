@@ -3,13 +3,30 @@
     box-sizing: border-box;
     margin: 0;
 }
+:root {
+    --text: black;
+    --background: white;
+    --primary: #FF5555 ;
+  }
+.dark-theme{
+    --text: white;
+    --background: black;
+    --primary: #FF5555 ;
+}
+body{
+    color: var(--text) !important;
+    background-color: var(--background) !important;
+}
+.navbar{
+    background-color: var(--background) !important;
+}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: white;
+    background-color: var(--background);
 }
 .nav-container{
     padding: 40px;
@@ -24,8 +41,12 @@ nav{
     width: 70%;
 }
 #navbarText a{
+    color: var(--text) ;
     font-size: 20px;
     padding: 20px;
+}
+#navbarText a:hover{
+    color: #FF5555;
 }
 .navbar-brand{
     font-weight: bold;
@@ -35,6 +56,7 @@ nav{
     color: #FF5555 !important;
     cursor: pointer;
 }
+
 /*navbar right, download button  */
 .nav-right{
     display: flex;
@@ -47,16 +69,16 @@ nav{
     padding: 20px;
     padding-left: 50px;
     padding-right: 40px;
-    color: white;
+    color: var(--background);
     border-radius: 10px;
     border: none;
     text-transform: capitalize;
 }
 .button-2 {
-    color: #fff;
-    border: 3px solid  black;
-    background-image: -webkit-linear-gradient(30deg,  black 50%, transparent 50%);
-    background-image: linear-gradient(30deg,  black 50%, transparent 50%);
+    color: var(--background);
+    border: 3px solid  var(--text);
+    background-image: -webkit-linear-gradient(30deg, var(--text) 50%, transparent 50%);
+    background-image: linear-gradient(30deg,  var(--text) 50%, transparent 50%);
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -65,7 +87,7 @@ nav{
   }
   .button-2:hover {
     background-position: 100%;
-    color: black;
+    color: var(--text);
   }
   .mode{
     width: 100px;
@@ -73,10 +95,7 @@ nav{
     cursor: pointer;
   }
 /* home section */
-/* .home{
-    height:100vh;
-    position: relative;
-} */
+
 .home .col-lg-8{
     min-height: 850px;
 }
@@ -107,7 +126,7 @@ nav{
     padding: 20px;
     padding-left: 50px;
     padding-right: 40px;
-    color: white;
+    color: var(--background);
     border-radius: 10px;
     border: none;
 }
