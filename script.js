@@ -13,19 +13,7 @@
                 link.classList.remove('active');
             }
         });
-$(document).ready(function() {
-    // Get the initial height of the navbar
-    var navbarHeight = $('.navbar').outerHeight();
 
-    // Set the initial padding-top for the content section
-    $('.content').css('padding-top', navbarHeight);
-
-    // Adjust the padding-top when the window is resized
-    $(window).resize(function() {
-        navbarHeight = $('.navbar').outerHeight();
-        $('.content').css('padding-top', navbarHeight);
-    });
-});
 let theme="light";
 let mode=document.querySelector(".mode")
 mode.addEventListener("click",()=>{
